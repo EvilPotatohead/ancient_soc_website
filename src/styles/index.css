@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --font-main: Adamina, sans-serif;
+
+  --color-primary: #710623; /*AncientSoc red*/
+  --color-contrast: #33000C; /*Contrast colour*/
+}
