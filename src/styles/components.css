@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .footer-col {
+    @apply flex justify-center flex-col p-6;
+  }
+}

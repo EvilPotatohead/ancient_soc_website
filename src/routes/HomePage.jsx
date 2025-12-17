@@ -2,7 +2,8 @@ import NavBar from '../components/NavBar'
 
 const HomePage = () => {
     return (
-        <div style={{width: '100%'}}> 
+        <div className="font-main"> 
+            <div className="h-16" />
             hello bozo
         </div>
         

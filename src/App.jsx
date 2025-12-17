@@ -3,6 +3,7 @@ import './styles/App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import HomePage from './routes/HomePage'
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
           {/* Public Pages */}
           <Route path="/" element={<HomePage />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );

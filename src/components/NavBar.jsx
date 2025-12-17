@@ -9,7 +9,7 @@ const NavBar = () => {
     //     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     // }
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 bg-white flex flex-row items-center justify-between">
+        <nav className="fixed top-0 left-0 w-full h-16 z-50 bg-white flex flex-row items-center justify-between shadow-xs">
             <div className="font-main h-16 flex"> 
                 <AncientSocLogo className="h-full"/>
             </div>
