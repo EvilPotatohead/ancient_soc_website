@@ -3,10 +3,10 @@ import { HashLink } from 'react-router-hash-link';
 const Footer = () => {
     return (
         <div className="bg-contrast text-white font-main 
-            fixed bottom-0 left-0 w-full p-4 
-            flex flex-row justify-between items-center"
+             w-full p-4 
+            flex flex-col md:flex-row justify-between items-center"
         >
-            <div className='footer-col'>
+            <div className='hidden md:flex footer-col'>
                 <div className='font-bold'>
                     Pages
                 </div>
@@ -40,36 +40,48 @@ const Footer = () => {
             </div>
 
             <div className='footer-col'>
+                <img 
+                    src="src/assets/ancsoc_logo.png" 
+                    alt="AncientSoc UNSW logo"
+                    className='w-24 p-2' 
+                />
+                <div className='font-bold text-lg'>
+                    UNSW Ancient Languages and Culture Society
+                </div>
+                <div>
+                    ancientsoc.unsw@gmail.com
+                </div>
+
+            </div>
+
+            <div className='footer-col'>
                 <div className='font-bold'>
                     Contact us
                 </div>
-                <HashLink
-                    tabIndex={-1}
-                    onKeyDown={() => {}}
-                    smooth
-                    to='/#'
+                <a 
+                    href="https://www.instagram.com/ancientsoc.unsw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-main px-4 py-2 whitespace-nowrap"
-                > 
+                >
                     Instagram
-                </HashLink>
-                <HashLink
-                    tabIndex={-1}
-                    onKeyDown={() => {}}
-                    smooth
-                    to='/#'
+                </a>
+                <a 
+                    href="https://www.facebook.com/profile.php?id=61572183574744"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-main px-4 py-2 whitespace-nowrap"
-                > 
+                >
                     Facebook
-                </HashLink>
-                <HashLink
-                    tabIndex={-1}
-                    onKeyDown={() => {}}
-                    smooth
-                    to='/#'
+                </a>
+                <a 
+                    href="mailto:ancientsoc.unsw@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-main px-4 py-2 whitespace-nowrap"
-                > 
+                >
                     Email
-                </HashLink>
+                </a>
             </div>
             
         </div>

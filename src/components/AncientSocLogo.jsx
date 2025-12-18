@@ -10,7 +10,7 @@ const AncientSocLogo = () => {
       tabIndex={0}
     >
       <img src={logo} alt="logo" className="h-full w-auto object-contain" />
-      <h2 className="font-bold p-2">AncientSoc UNSW</h2>
+      <div className="font-bold text-left p-2">AncientSoc</div>
     </HashLink>
   );
 };

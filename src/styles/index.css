@@ -18,3 +18,12 @@ html, body {
   height: 100%;
   overscroll-behavior: none;
 }
+
+h1 {
+  font-size: 1.5rem;
+  padding: 0.5rem 4rem
+}
+
+h2 {
+  padding: 0.25rem 4rem
+}

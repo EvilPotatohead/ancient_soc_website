@@ -9,11 +9,11 @@ const NavBar = () => {
     //     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     // }
     return (
-        <nav className="fixed top-0 left-0 w-full h-16 z-50 bg-white flex flex-row items-center justify-between shadow-xs">
+        <nav className="fixed inset-x-0 top-0 h-16 z-50 bg-white flex flex-row items-center justify-between shadow-2xl w-full">
             <div className="font-main h-16 flex"> 
-                <AncientSocLogo className="h-full"/>
+                <AncientSocLogo className="h-full overflow-hidden w-auto max-w-full"/>
             </div>
-            <div className="flex flex-row justify-center items-center min-w-max">
+            <div className="hidden md:flex flex-row justify-center items-center">
                 <HashLink
                     tabIndex={-1}
                     onKeyDown={() => {}}
