@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./components.css";
+
+@theme {
+  --font-main: Adamina, sans-serif;
+  --color-primary: #710623; /*AncientSoc red*/
+  --color-contrast: #33000C; /*Contrast colour*/
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding: 0.5rem 4rem
+}
+
+h2 {
+  padding: 0.25rem 4rem
+}

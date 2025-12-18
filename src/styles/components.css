@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer components {
+  .footer-col {
+    @apply flex flex-col items-center p-6 text-center;
+  }
+  .button {
+    @apply bg-primary text-white p-2 min-w-24
+                            border-3 border-contrast rounded-xl shadow-md shadow-contrast
+                            transition-shadow duration-300 hover:scale-110
+                            hover:bg-contrast;
+  }
+  .button-container {
+    @apply flex flex-row w-full items-center justify-center sm:gap-8 md:gap-24 lg:gap-48;
+  }
+}
