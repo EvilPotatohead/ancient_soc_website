@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { HashLink } from 'react-router-hash-link';
 import HeroHeader from '../components/HeroHeader';
 import { Navigate, useNavigate } from 'react-router-dom';
 
@@ -8,14 +9,13 @@ const HomePage = () => {
         <div className="font-main overflow-hidden"> 
             <div className="min-h-16" />
             <HeroHeader>
-                <div class="absolute inset-0 bg-white/50"></div>
-                <div className='z-10 flex flex-col items-center justify-between min-w-[100vw]'>
+                
                     <img src="src/assets/ancsoc_logo.png" alt="Ancient Languages and Culture Society UNSW" 
                         className='w-40'
                     />
                     <div className="button-container py-12">
                         <button className="button">About</button>
-                        <button className="button">Join today</button>
+                        <HashLink className="button" smooth to="/#join-us">Join today</HashLink>
                     </div>
 
                     <div className="flex flex-row justify-center gap-16 p-2 min-w-[70vh]">
@@ -40,7 +40,6 @@ const HomePage = () => {
                         
                         
                     </div>
-                </div>
             </HeroHeader>
             <div className='pb-8'>
                 <h1>Welcome to Ancient Languages and Culture Society at UNSW</h1>
@@ -53,7 +52,7 @@ const HomePage = () => {
                 <p className="text-bold text-lg pb-4 px-2">To be confirmed closer to Term 1 2026</p>
             </section>
             
-            <div className="pb-8">
+            <section id="join-us" className="pt-6 pb-6 scroll-mt-16">
                 <h1>Join us today</h1>
                 <div className="button-container py-2">
                     <button className="button" 
@@ -69,7 +68,8 @@ const HomePage = () => {
                             Facebook
                         </button>
                 </div>
-            </div>
+            </section>
+
             <div className="pb-8">
                 <h1>Learn more about the society</h1>
                 <div className="button-container py-2">

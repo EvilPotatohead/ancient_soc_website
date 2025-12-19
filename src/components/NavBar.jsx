@@ -18,7 +18,7 @@ const NavBar = () => {
                     tabIndex={-1}
                     onKeyDown={() => {}}
                     smooth
-                    to='/#'
+                    to='/about'
                     className="font-main px-4 py-2 whitespace-nowrap"
                 >
                     About Us
@@ -27,7 +27,7 @@ const NavBar = () => {
                     tabIndex={-1}
                     onKeyDown={() => {}}
                     smooth
-                    to='/#'
+                    to='/events'
                     className="font-main px-4 py-2"
                 >
                     Events
@@ -36,7 +36,7 @@ const NavBar = () => {
                     tabIndex={-1}
                     onKeyDown={() => {}}
                     smooth
-                    to='/#'
+                    to='/resources'
                     className="font-main px-4 py-2"
                 >
                     Resources
