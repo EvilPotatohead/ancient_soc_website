@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 const Footer = () => {
     return (
         <div className="bg-contrast text-white font-main 
-             w-full p-4 
+            w-full p-4 
             flex flex-col md:flex-row justify-between items-center"
         >
             <div className='hidden md:flex footer-col'>
@@ -14,7 +14,7 @@ const Footer = () => {
                     tabIndex={-1}
                     onKeyDown={() => {}}
                     smooth
-                    to='/#'
+                    to='/about'
                     className="font-main px-4 py-2 whitespace-nowrap"
                 > 
                     About
@@ -23,7 +23,7 @@ const Footer = () => {
                     tabIndex={-1}
                     onKeyDown={() => {}}
                     smooth
-                    to='/#'
+                    to='/resources'
                     className="font-main px-4 py-2 whitespace-nowrap"
                 > 
                     Resources
@@ -32,7 +32,7 @@ const Footer = () => {
                     tabIndex={-1}
                     onKeyDown={() => {}}
                     smooth
-                    to='/#'
+                    to='/events'
                     className="font-main px-4 py-2 whitespace-nowrap"
                 > 
                     Events
