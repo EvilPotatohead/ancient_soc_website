@@ -9,37 +9,34 @@ const HomePage = () => {
         <div className="font-main overflow-hidden"> 
             <div className="min-h-16" />
             <HeroHeader>
-                
-                    <img src="src/assets/ancsoc_logo.png" alt="Ancient Languages and Culture Society UNSW" 
-                        className='w-40'
-                    />
-                    <div className="button-container py-12">
-                        <button className="button">About</button>
-                        <HashLink className="button" smooth to="/#join-us">Join today</HashLink>
-                    </div>
+                <img src="src/assets/ancsoc_logo.png" alt="Ancient Languages and Culture Society UNSW" 
+                    className='w-40'
+                />
+                <div className="button-container py-12">
+                    <button className="button">About</button>
+                    <HashLink className="button" smooth to="/#join-us">Join today</HashLink>
+                </div>
 
-                    <div className="flex flex-row justify-center gap-16 p-2 min-w-[70vh]">
-                        <a 
-                            href="https://www.instagram.com/ancientsoc.unsw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-main px-4 py-2 whitespace-nowrap"
-                        >
-                            <FaInstagram className='text-primary w-12 h-12 transition-shadow duration-300
-                                hover:scale-110'/>
-                        </a>
-                        <a 
-                            href="https://www.facebook.com/profile.php?id=61572183574744"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-main px-4 py-2 whitespace-nowrap"
-                        >
-                            <FaFacebook className='text-primary w-12 h-12 transition-shadow duration-300
-                                hover:scale-110'/>
-                        </a>
-                        
-                        
-                    </div>
+                <div className="flex flex-row justify-center gap-16 p-2 min-w-[70vh]">
+                    <a 
+                        href="https://www.instagram.com/ancientsoc.unsw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-main px-4 py-2 whitespace-nowrap"
+                    >
+                        <FaInstagram className='text-primary w-12 h-12 transition-shadow duration-300
+                            hover:scale-110'/>
+                    </a>
+                    <a 
+                        href="https://www.facebook.com/profile.php?id=61572183574744"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-main px-4 py-2 whitespace-nowrap"
+                    >
+                        <FaFacebook className='text-primary w-12 h-12 transition-shadow duration-300
+                            hover:scale-110'/>
+                    </a>
+                </div>
             </HeroHeader>
             <div className='pb-8'>
                 <h1>Welcome to Ancient Languages and Culture Society at UNSW</h1>
