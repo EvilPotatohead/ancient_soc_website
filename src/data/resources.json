@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Test title",
+    "url": "https://www.gutenberg.org/ebooks/1497",
+    "type": "slides",
+    "filter": "latin"
+  }, 
+  {
+    "id": 2,
+    "title": "Test title 2",
+    "url": "https://www.gutenberg.org/ebooks/1497",
+    "type": "slides",
+    "filter": "greek"
+  },
+  {
+    "id": 3,
+    "title": "Test title 3",
+    "url": "https://www.gutenberg.org/ebooks/1497",
+    "type": "pdf",
+    "filter": "persian"
+  },
+  {
+    "id": 4,
+    "title": "Test title 4",
+    "url": "https://www.gutenberg.org/ebooks/1497",
+    "type": "image",
+    "filter": "latin"
+  }, 
+  {
+    "id": 5,
+    "title": "Test title 5",
+    "url": "https://www.gutenberg.org/ebooks/1497",
+    "type": "image",
+    "filter": "latin"
+  },
+  {
+    "id": 6,
+    "title": "Test title 6",
+    "url": "https://www.gutenberg.org/ebooks/1497",
+    "type": "image",
+    "filter": "latin"
+  },
+  {
+    "id": 7,
+    "title": "Test title 7",
+    "url": "https://www.gutenberg.org/ebooks/1497",
+    "type": "image",
+    "filter": "latin"
+  }
+]
