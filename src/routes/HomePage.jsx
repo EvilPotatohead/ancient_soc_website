@@ -13,7 +13,7 @@ const HomePage = () => {
                     className='w-40'
                 />
                 <div className="button-container py-12">
-                    <button className="button">About</button>
+                    <button className="button" onClick={() => navigate('/about')}>About</button>
                     <HashLink className="button" smooth to="/#join-us">Join today</HashLink>
                 </div>
 

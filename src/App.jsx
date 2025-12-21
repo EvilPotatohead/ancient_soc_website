@@ -5,6 +5,7 @@ import HomePage from './routes/HomePage'
 import EventsPage from './routes/EventsPage';
 import AboutPage from './routes/AboutPage';
 import ResourcesPage from './routes/ResourcesPage';
+import NotFoundPage from './routes/NotFoundPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
@@ -15,6 +16,7 @@ const App = () => {
         <NavBar />
         <Routes>
           {/* Public Pages */}
+          <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/about" element={<AboutPage />} />
