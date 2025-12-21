@@ -1,6 +1,6 @@
 import HeroHeader from "../components/HeroHeader";
 import { HashLink } from 'react-router-hash-link';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import resources from "../data/resources.json";
 
