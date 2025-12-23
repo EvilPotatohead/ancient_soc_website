@@ -1,17 +1,22 @@
 import HeroHeader from "../components/HeroHeader";
-import { HashLink } from 'react-router-hash-link';
 import { useState } from "react";
 
 import resources from "../data/resources.json";
 
 const ResourcesPage = () => {
     const [filter, setFilter] = useState('all');
-    const filters = ['latin', 'greek', 'persian'];
+    const [query, setQuery] = useState('');
+    const filters = ['all', 'latin', 'greek', 'persian'];
 
-    const items = resources
-        .filter(i => filter === 'all' || i.filter === filter)
+    const searchResults = resources.filter(i =>
+        i.title.toLowerCase().includes(query.toLowerCase())
+    );
+
+    // currently sorts by alphabetical order
+    const items = searchResults
+        .filter(i => filter === 'all' || i.filter === filter).sort((a, b) => a.title.localeCompare(b.title))
         .map(i => (
-            <div className='flex items-center justify-center bg-primary text-white w-full h-full rounded-lg p-4'>
+            <div className='flex items-center justify-center bg-primary text-white w-full h-full rounded-lg p-4 wrap-anywhere'>
                 <a
                     key={i.id}
                     href={i.url}
@@ -19,10 +24,12 @@ const ResourcesPage = () => {
                 >
                     {i.title}
                 </a>
-            </div>
-            
-    ));
-    console.log(items)
+            </div>)
+        );
+    
+    const titleCase = (string) => {
+        return String(string).charAt(0).toUpperCase() + String(string).slice(1);
+    };
 
     return (
         <div className="font-main overflow-hidden">
@@ -34,38 +41,37 @@ const ResourcesPage = () => {
             </HeroHeader>
             <div className="pt-6 flex justify-center">
                 <div className='border-2 border-contrast w-fit rounded-lg flex flex-col md:flex-row'>
-                    <button
-                        data-filter={filter === 'all'} 
-                        className="min-w-24 cursor-pointer data-[filter=true]:bg-primary data-[filter=true]:text-white" 
-                        onClick={() => setFilter('all')}>
-                        All
-                    </button>
-                    <button 
-                        data-filter={filter === 'latin'} 
-                        className="min-w-24 cursor-pointer data-[filter=true]:bg-primary data-[filter=true]:text-white"
-                        onClick={() => setFilter('latin')}>
-                        Latin
-                    </button>
-                    <button
-                        data-filter={filter === 'greek'} 
-                        className="min-w-24 cursor-pointer data-[filter=true]:bg-primary data-[filter=true]:text-white"
-                        onClick={() => setFilter('greek')}>
-                        Greek
-                    </button>
-                    <button
-                        data-filter={filter === 'persian'} 
-                        className="min-w-24 cursor-pointer data-[filter=true]:bg-primary data-[filter=true]:text-white"
-                        onClick={() => setFilter('persian')}>
-                        Old Persian
-                    </button>
+                    {filters.map(i => (
+                        <button
+                            data-filter={filter === i} 
+                            className="min-w-24 cursor-pointer data-[filter=true]:bg-primary data-[filter=true]:text-white" 
+                            onClick={() => setFilter(i)}>
+                            {titleCase(i)}
+                        </button>
+                    ))}
+
                 </div>
             </div>
+            <div className='flex justify-center items-center py-2'>
+                <input
+                    type="text"
+                    placeholder="Search by title…"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    className="border rounded-lg px-3 py-2 w-[80vw]"
+                />
+            </div>
+            
             <div className="flex justify-center items-center p-6">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 col-span-2 auto-rows-[80%]
                     inset-shadow-sm/50 inset-shadow-primary 
                     h-[40vh] p-4 overflow-auto w-full rounded-xl"
                 >
-                    {items}
+                    {items.length === 0 ? 
+                        <div className='flex items-center justify-center bg-primary text-white w-full h-full rounded-lg p-4 wrap-anywhere'>
+                            Nothing to see here...
+                        </div>
+                    : items}
                 </div>
             </div>
 

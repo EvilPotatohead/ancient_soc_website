@@ -1,9 +1,25 @@
 import { slide as Menu } from 'react-burger-menu'
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-const BurgerMenu = ({children}) => {
+const BurgerMenu = ({items}) => {
+    const navigate = useNavigate();
+    const scrollToTop = () => {window.scrollTo(0, 0)};
+    const [menuOpen, setMenuOpen] = useState(false);
+    const titleCase = (string) => {
+        return String(string).charAt(0).toUpperCase() + String(string).slice(1);
+    };
+
+    const handleClick = (p) => {
+        setMenuOpen(false)
+        navigate("/" + p)
+        scrollToTop()
+    }
+
     return (
-        <Menu right styles={{
+        <Menu right 
+            onStateChange={(state) => setMenuOpen(state.isOpen)}
+            styles={{
             bmBurgerButton: {
                 position: 'fixed',
                 width: '30px',
@@ -18,13 +34,13 @@ const BurgerMenu = ({children}) => {
             },
             bmMenu: {
                 position: 'fixed',
-                width: '240px',
+                width: '45%',
                 background: '#fff',
                 height: '100vh',
             },
             bmMenuWrap: {
                 position: 'fixed',
-                width: '240px',
+                width: '45%',
                 top: 0,
                 background: '#fff'
             },
@@ -45,7 +61,15 @@ const BurgerMenu = ({children}) => {
                 paddingTop: '24px'
             }
         }}>
-            {children}
+            {items.map(p=> (
+                <button
+                    className="font-main text-black px-4 py-2 whitespace-nowrap cursor-pointer"
+                    id={p}
+                    onClick={() => {handleClick(p)}}
+                >
+                    {titleCase(p)}
+                </button>
+            ))}
         </Menu>
     )
 }

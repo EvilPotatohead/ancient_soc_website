@@ -1,51 +1,100 @@
 [
   {
     "id": 1,
-    "title": "Test title",
-    "url": "https://www.gutenberg.org/ebooks/1497",
+    "title": "Persian 25T3 week 1 slides",
+    "url": "https://docs.google.com/presentation/d/1O2hcLwmyfRLq35yGvna1hHX8bnwKHMou0rrDot5VFzs/edit?slide=id.p#slide=id.p",
     "type": "slides",
-    "filter": "latin"
+    "filter": "persian"
   }, 
   {
     "id": 2,
-    "title": "Test title 2",
-    "url": "https://www.gutenberg.org/ebooks/1497",
+    "title": "Persian 25T3 week 2 slides",
+    "url": "https://docs.google.com/presentation/d/1ZIV-VnRZF7TSlrKAHvObm35tEjSkSst6pwnCBVlg9Gw/edit?slide=id.p#slide=id.p",
     "type": "slides",
-    "filter": "greek"
+    "filter": "persian"
   },
   {
     "id": 3,
-    "title": "Test title 3",
-    "url": "https://www.gutenberg.org/ebooks/1497",
-    "type": "pdf",
+    "title": "Persian 25T3 week 5 slides",
+    "url": "https://docs.google.com/presentation/d/1FJSe4_MmrZ9IYIFfUquMzTiAO1okoIv7A5n0a5t88y4/edit?slide=id.p#slide=id.p",
+    "type": "slides",
     "filter": "persian"
   },
   {
     "id": 4,
-    "title": "Test title 4",
-    "url": "https://www.gutenberg.org/ebooks/1497",
-    "type": "image",
-    "filter": "latin"
-  }, 
+    "title": "Life of Theseus - Plutarch",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html",
+    "type": "link",
+    "filter": "greek"
+  },
   {
     "id": 5,
-    "title": "Test title 5",
-    "url": "https://www.gutenberg.org/ebooks/1497",
+    "title": "Persian 25T3 week 9 slides",
+    "url": "https://docs.google.com/presentation/d/1p0zvUzKbvnMVp6jyCBMOFYCjGkC73v_-4X9acBeAc6U/edit?slide=id.p#slide=id.p",
     "type": "image",
-    "filter": "latin"
+    "filter": "persian"
   },
   {
     "id": 6,
-    "title": "Test title 6",
-    "url": "https://www.gutenberg.org/ebooks/1497",
-    "type": "image",
-    "filter": "latin"
+    "title": "Ancient Greek cheatsheet",
+    "url": "https://docs.google.com/document/d/1UIGslKbeCi_3CnNMkW20PHiVVCqH-Zl9BZCWHYFRNXU/edit?tab=t.gmpai5o5l3ls#heading=h.a4tlqpyj8c2u",
+    "type": "docs",
+    "filter": "greek"
   },
   {
     "id": 7,
-    "title": "Test title 7",
-    "url": "https://www.gutenberg.org/ebooks/1497",
-    "type": "image",
-    "filter": "latin"
+    "title": "Greek 25T2 week 1 slides",
+    "url": "https://docs.google.com/presentation/d/1DvmnSEduYdCVey5NErWRVrI4pXolGzBvpq_dbAUrp_Y/edit?usp=drive_link",
+    "type": "slides",
+    "filter": "greek"
+  },
+  {
+    "id": 8,
+    "title": "Greek 25T2 week 2 slides",
+    "url": "https://docs.google.com/presentation/d/1WXD5amPQ98uPIfeya_qftc-7cbYXHpjssjKgNZ5cQtI/edit?usp=drive_link",
+    "type": "slides",
+    "filter": "greek"
+  },
+  {
+    "id": 9,
+    "title": "Greek 25T2 week 3 slides",
+    "url": "https://docs.google.com/presentation/d/12VVx9_Ow9_tCI1lJw5sMByQ9u47uCXbcYjR7k9_VWSI/edit?usp=drive_link",
+    "type": "slides",
+    "filter": "greek"
+  },
+  {
+    "id": 10,
+    "title": "Greek 25T2 week 4 slides",
+    "url": "https://docs.google.com/presentation/d/1inVxNtzbfAdFOs1AtrxzyR_KW8BeUmjXdUeTPMNxzd4/edit?usp=drive_link",
+    "type": "slides",
+    "filter": "greek"
+  },
+  {
+    "id": 11,
+    "title": "Greek 25T2 week 5 review exercises",
+    "url": "https://docs.google.com/presentation/d/1jXgsRNV7XxU35P-cSo_-AZ6noyTPy9heYCVA9oOFzrY/edit?usp=drive_link",
+    "type": "docs",
+    "filter": "greek"
+  },
+  {
+    "id": 12,
+    "title": "Greek 25T2 week 7 slides",
+    "url": "https://docs.google.com/presentation/d/1UygUk64w7FVN_lz5NVP4EHfFeqSEszfDo7KQ59zjxzw/edit?usp=drive_link",
+    "type": "slides",
+    "filter": "greek"
+  },
+  {
+    "id": 13,
+    "title": "Greek 25T2 week 8 slides",
+    "url": "https://docs.google.com/presentation/d/1eRZ6I3rQZLm2CSs1NSOqRKT5ZHUJ_BbqJChxPFsbeg0/edit?usp=drive_link",
+    "type": "slides",
+    "filter": "greek"
+  },
+  {
+    "id": 14,
+    "title": "Greek 25T2 week 9 slides",
+    "url": "https://docs.google.com/presentation/d/11tq4jjGE8fzg9RFGN6wS8Q1H4QEyNSy1UqQq1yUX1CY/edit?usp=drive_link",
+    "type": "slides",
+    "filter": "greek"
   }
 ]

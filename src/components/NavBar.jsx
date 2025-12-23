@@ -8,7 +8,6 @@ const NavBar = () => {
     const navigate = useNavigate();
     const scrollToTop = () => {window.scrollTo(0, 0)};
     const pages = ['about', 'events', 'resources'];
-    const [menuOpen, setMenuOpen] = useState(false);
 
     const titleCase = (string) => {
         return String(string).charAt(0).toUpperCase() + String(string).slice(1);
@@ -29,9 +28,7 @@ const NavBar = () => {
                 <AncientSocLogo className="h-full overflow-hidden w-auto max-w-full"/>
             </div>
             <div className="md:hidden">
-                <BurgerMenu>
-                    {buttons}
-                </BurgerMenu>
+                <BurgerMenu items={pages}/>
             </div>
             
             <div className="hidden md:flex flex-row justify-center items-center">
