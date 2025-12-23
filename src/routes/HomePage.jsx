@@ -71,11 +71,11 @@ const HomePage = () => {
                 <h1>Learn more about the society</h1>
                 <div className="button-container py-2">
                     <button className="button" 
-                        onClick={() => navigate('/#')}>
+                        onClick={() => {navigate('/resources'); window.scrollTo(0, 0);}}>
                             Resources
                         </button>
                     <button className="button"
-                        onClick={() => navigate('/#')}>
+                        onClick={() => {navigate('/events'); window.scrollTo(0, 0);}}>
                             Events
                         </button>
                 </div>

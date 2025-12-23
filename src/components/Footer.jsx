@@ -1,6 +1,8 @@
-import { HashLink } from 'react-router-hash-link';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+    const navigate = useNavigate();
+    const scrollToTop = () => {window.scrollTo(0, 0)};
     return (
         <div className="bg-contrast text-white font-main 
             w-full p-4 
@@ -10,33 +12,24 @@ const Footer = () => {
                 <div className='font-bold'>
                     Pages
                 </div>
-                <HashLink
-                    tabIndex={-1}
-                    onKeyDown={() => {}}
-                    smooth
-                    to='/about'
-                    className="font-main px-4 py-2 whitespace-nowrap"
-                > 
-                    About
-                </HashLink>
-                <HashLink
-                    tabIndex={-1}
-                    onKeyDown={() => {}}
-                    smooth
-                    to='/resources'
-                    className="font-main px-4 py-2 whitespace-nowrap"
-                > 
-                    Resources
-                </HashLink>
-                <HashLink
-                    tabIndex={-1}
-                    onKeyDown={() => {}}
-                    smooth
-                    to='/events'
-                    className="font-main px-4 py-2 whitespace-nowrap"
-                > 
+                <button
+                    className="font-main px-4 py-2 whitespace-nowrap cursor-pointer"
+                    onClick={() => {navigate('/about'); scrollToTop()}}
+                >
+                    About Us
+                </button>
+                <button
+                    className="font-main px-4 py-2 whitespace-nowrap cursor-pointer"
+                    onClick={() => {navigate('/events'); scrollToTop()}}
+                >
                     Events
-                </HashLink>
+                </button>
+                <button
+                    className="font-main px-4 py-2 whitespace-nowrap cursor-pointer"
+                    onClick={() => {navigate('/resources'); scrollToTop()}}
+                >
+                    Resources
+                </button>
             </div>
 
             <div className='footer-col'>
