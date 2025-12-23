@@ -3,13 +3,15 @@ import { HashLink } from 'react-router-hash-link';
 import HeroHeader from '../components/HeroHeader';
 import { Navigate, useNavigate } from 'react-router-dom';
 
+import big_logo from '../assets/ancsoc_logo.png'
+
 const HomePage = () => {
     const navigate = useNavigate();
     return (
         <div className="font-main overflow-hidden"> 
             <div className="min-h-16" />
             <HeroHeader>
-                <img src="src/assets/ancsoc_logo.png" alt="Ancient Languages and Culture Society UNSW" 
+                <img src={big_logo} alt="Ancient Languages and Culture Society UNSW" 
                     className='w-40'
                 />
                 <div className="button-container py-12">

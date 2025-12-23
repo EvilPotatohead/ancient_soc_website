@@ -1,8 +1,11 @@
+import school_of_athens from '../assets/school_of_athens.png';
+
 const HeroHeader = ({children}) => {
     return (
-        <section className="
+        <section
+            style={{ backgroundImage: `url(${school_of_athens})` }}
+            className="
                 relative
-                bg-[url('src/assets/school_of_athens.png')]
                 bg-cover bg-center
                 flex justify-center
                 p-6
