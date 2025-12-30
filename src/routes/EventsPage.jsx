@@ -11,7 +11,7 @@ const EventsPage = () => {
             </HeroHeader>
             <div className="pb-8">
                 <h1>Weekly language and culture workshops</h1>
-                <p>BLAH BLAH BLAH We meet every week and play Clash Royale</p>
+                <p>The main event we hold is a weekly workshop, where we spend an hour learning about the language and history of an ancient culture. This culture is explored in detail throughout the term.</p>
             </div>
             <section className="bg-primary text-white w-[80vw] mx-auto rounded-xl">
                 <h1 className="px-1">This term, weekly sessions are held at:</h1>

@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import ancsoc_logo from '../assets/ancsoc_logo.png';
 
 const Footer = () => {
     const navigate = useNavigate();
@@ -34,7 +35,7 @@ const Footer = () => {
 
             <div className='footer-col'>
                 <img 
-                    src="src/assets/ancsoc_logo.png" 
+                    src={ancsoc_logo} 
                     alt="AncientSoc UNSW logo"
                     className='w-24 p-2' 
                 />
